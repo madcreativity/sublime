@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    background-color: #F1F1F1;
+}
+
+/* Nav component start */
+
+/* Blocks */
+.nav-header {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+}
+
+/* Elements */
+.nav-header__nav {
+    padding: 0 10px;
+    font-family: 'Poppins', sans-serif;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.nav-header__nav__ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-header__nav__ul__li {
+    margin-right: 48px;
+}
+
+.nav-header__nav__ul__li:last-child {
+    margin-right: 0;
+}
+
+.nav-header__nav__logo {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.nav-header__nav__a {
+    text-decoration: none;
+    color: #767676;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-transition: color 200ms ease;
+    -moz-transition: color 200ms ease;
+    -ms-transition: color 200ms ease;
+    -o-transition: color 200ms ease;
+    transition: color 200ms ease;
+}
+
+.nav-header__nav__a:hover {
+    color: #1b1b1b;
+}
+
+.nav-header__nav__drop-list {
+    display: none;
+}
+
+.nav-header__nav__shopping-cart {
+    margin-right: 15px;
+    vertical-align: middle;
+    height: 20px;
+}
+
+.nav-header__nav__search-icon {
+    margin-left: 50px;
+    height: 14px;
+    -webkit-transition: fill 200ms ease;
+    -moz-transition: fill 200ms ease;
+    -ms-transition: fill 200ms ease;
+    -o-transition: fill 200ms ease;
+    transition: fill 200ms ease;
+}
+
+.nav-header__nav__search-icon:hover {
+    fill: #e83e8c;
+    cursor: pointer;
+}
+
+.nav-header__nav__search-icon::before {
+    font-size: 14px;
+}
+
+.nav-header__nav__drop-icon {
+    position: relative;
+}
+
+.nav-header__nav__drop-icon::before {
+    font-size: 12px;
+    position: absolute;
+    top: -12px;
+}
+
+.nav-header__nav__cart {
+    color: #1B1B1B;
+    font-weight: 500;
+    font-size: 14px;
+    -webkit-transition: color 200ms ease, fill 200ms ease;
+    -moz-transition: color 200ms ease, fill 200ms ease;
+    -ms-transition: color 200ms ease, fill 200ms ease;
+    -o-transition: color 200ms ease, fill 200ms ease;
+    transition: color 200ms ease, fill 200ms ease;
+}
+
+.nav-header__nav__cart:hover {
+    color: #e83e8c;
+    fill: #e83e8c;
+}
+
+/* Modifiers */
+.nav-header__nav__a--current {
+    color: #1B1B1B;
+}
+
+/* Nav component end */
