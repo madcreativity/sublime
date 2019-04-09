@@ -1,0 +1,62 @@
+/* Footer component start */
+
+/* Blocks */
+.footer {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    background-image: url("../img/footer.jpg");
+    height: 129px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    bottom: 0;
+}
+
+/* Elements */
+.footer__copyright {
+    width: 40%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1B1B1B;
+    text-align: center;
+}
+
+.footer__icon {
+    color: #1B1B1B;
+    -webkit-transition: color 200ms ease;
+    -moz-transition: color 200ms ease;
+    -ms-transition: color 200ms ease;
+    -o-transition: color 200ms ease;
+    transition: color 200ms ease;
+}
+
+.footer__icon:hover {
+    color: white;
+}
+
+.footer__logo {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    color: #1B1B1B;
+    text-decoration: none;
+}
+
+.footer__ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer__ul__li {
+    margin: 0 15px;
+}
+
+/* Modifiers */
+
+/* Footer component end */

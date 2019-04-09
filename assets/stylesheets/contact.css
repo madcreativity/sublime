@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+}
+
+.main {
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    margin-bottom: 129px;
+}
