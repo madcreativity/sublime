@@ -89,7 +89,66 @@
         <!-- Navbar component end -->
 
         <main class="main">
-            
+            <div class="main__header">
+                <div class="main__header__text-shift">
+                    <a href="./index.html" class="main__header__path-text main__header__path-text--divider">Home</a><span class="main__header__path-text main__header__path-text--current">Contact</span>
+                </div>
+            </div>
+            <div class="main__content">
+                <article class="main__contact">
+                    <article class="main__contact__establish-contact">
+                        <h1 class="critical-title">Get in Touch</h1>
+                        <p class="std-text">Say hello</p>
+                        <form class="main__contact__contact-form">
+                            <div class="main__contact__contact-form__flex">
+                                <div class="main__contact__contact-form__flex__item">
+                                    <label class="std-text" for="first-name">First name*</label>
+                                    <input class="std-text-input" type="text" name="first-name" required="required">
+                                </div>
+                                <div class="main__contact__contact-form__flex__item">
+                                    <label class="std-text" for="last-name">Last name*</label>
+                                    <input class="std-text-input" type="text" name="last-name" required="required">
+                                </div>
+                            </div>
+
+                            <label class="std-text" for="subject">Subject</label>
+                            <input class="std-text-input" type="text" name="subject">
+
+                            <label class="std-text" for="message">Message*</label>
+                            <textarea class="std-text-input std-text-input--large" name="message" required="required"></textarea>
+
+                            <button class="flow-button">Send Message</button>
+                        </form>
+                    </article>
+                    <article class="main__contact__contact-info">
+                        <section class="main__contact__contact-info__section">
+                            <h2 class="std-medium-title">Marketing</h2>
+                            <address>
+                                <p class="std-text"><span class="std-text--sharp">Phone: </span> +52 555 0505 5050</p>
+                                <p class="std-text"><span class="std-text--sharp">Email: </span> std.example@gmail.com</p>
+                            </address>
+                        </section>
+                        <section class="main__contact__contact-info__section">
+                            <h2 class="std-medium-title">Shipping & Returns</h2>
+                            <address>
+                                <p class="std-text"><span class="std-text--sharp">Phone: </span> +52 555 0505 5050</p>
+                                <p class="std-text"><span class="std-text--sharp">Email: </span> std.example@gmail.com</p>
+                            </address>
+                        </section>
+                        <section class="main__contact__contact-info__section">
+                            <h2 class="std-medium-title">Information</h2>
+                            <address>
+                                <p class="std-text"><span class="std-text--sharp">Phone: </span> +52 555 0505 5050</p>
+                                <p class="std-text"><span class="std-text--sharp">Email: </span> std.example@gmail.com</p>
+                            </address>
+                        </section>
+                    </article>
+                </article>
+
+                <div class="main__map">
+                    <img src="./assets/img/googlemap.png">
+                </div>
+            </div>
         </main>
 
         <!-- Footer component start -->
