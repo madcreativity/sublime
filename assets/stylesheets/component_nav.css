@@ -145,6 +145,10 @@
 }
 
 /* Modifiers */
+.nav-header__nav__ul__li--list {
+    margin-right: 36px;
+}
+
 .nav-header__nav--small {
     height: 70px;
 }
