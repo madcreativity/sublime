@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: #F1F1F1;
+    height: 2000px;
 }
 
 /* Nav component start */
@@ -25,6 +26,7 @@ body {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
+    transition: height 200ms ease;
 }
 
 .nav-header__nav__ul {
