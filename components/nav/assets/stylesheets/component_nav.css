@@ -4,7 +4,7 @@
 .nav-header {
     background-color: white;
     width: 100%;
-    position: sticky;
+    position: fixed;
     z-index: 20;
     top: 0;
 }
