@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    background-color: #F1F1F1;
+}
+
 /* Nav component start */
 
 /* Blocks */
@@ -32,6 +37,13 @@
 
 .nav-header__nav__ul__li {
     margin-right: 48px;
+    position: relative;
+}
+
+.nav-header__nav__ul__li:hover .nav-header__nav__drop-list {
+    visibility: visible;
+    opacity: 1;
+    top: 25px;
 }
 
 .nav-header__nav__ul__li:last-child {
@@ -44,6 +56,7 @@
     margin: 0;
     color: #1B1B1B;
     text-decoration: none;
+    transition: font-size 200ms ease;
 }
 
 .nav-header__nav__a {
@@ -63,7 +76,25 @@
 }
 
 .nav-header__nav__drop-list {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    background-color: white;
+    padding: 25px 25px 25px 35px;
+    list-style: none;
+    margin: 0;
+    text-align: right;
+    transition: top 150ms ease, visibility 150ms ease, opacity 150ms ease;
+}
+
+.nav-header__nav__drop-list__item {
+    margin-bottom: 11px;
+}
+
+.nav-header__nav__drop-list__item:last-child {
+    margin-bottom: 0;
 }
 
 .nav-header__nav__shopping-cart {
@@ -118,8 +149,26 @@
 }
 
 /* Modifiers */
+.nav-header__nav--small {
+    height: 70px;
+}
+
+.nav-header__nav--small .nav-header__nav__logo {
+    font-size: 24px;
+}
+
 .nav-header__nav__a--current {
     color: #1B1B1B;
+}
+
+.nav-header__nav__a--list::after {
+    content: "\f078";
+    font-family: 'Font Awesome 5 Free';
+    font-size: 12px;
+}
+
+.nav-header__nav__a--dropdown {
+    font-size: 14px;
 }
 
 /* Nav component end */
