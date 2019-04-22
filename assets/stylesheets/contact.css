@@ -89,7 +89,7 @@ address {
 }
 
 .main__contact__contact-info {
-    margin-right: 48px;
+    margin: 0 48px 0 5px;
 }
 
 .main__contact__contact-form__flex__item {
@@ -131,6 +131,47 @@ address {
 .main__map {
     height: 575px;
     overflow: hidden;
+    position: relative;
+}
+
+.main__map__pin {
+    background-color: #829EAD;
+    box-shadow: 0 0 1px 2px white;
+    border-radius: 50px 50px 0 50px;
+    transform: rotateZ(45deg);
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    top: 125px;
+    left: 511px;
+    box-sizing: border-box;
+    padding: 5px;
+    transition: height 100ms ease, width 100ms ease, left 100ms ease, top 100ms ease;
+}
+
+.main__map__pin__name {
+    color: #60737d;
+    font-size: 24px;
+    transform: rotateZ(-45deg);
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 100px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 100ms ease, visibility 100ms ease;
+}
+
+.main__map__pin:hover {
+    height: 36px;
+    width: 36px;
+    top: 124px;
+    left: 509px;
+}
+
+.main__map__pin:hover .main__map__pin__name {
+    visibility: visible;
+    opacity: 1;
 }
 
 /* Modifiers */
