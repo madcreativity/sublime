@@ -1,8 +1,3 @@
-body {
-    margin: 0;
-    background-color: #F1F1F1;
-}
-
 /* Nav component start */
 
 /* Blocks */
@@ -51,7 +46,7 @@ body {
 .nav-header__nav__ul__li:hover .nav-header__nav__drop-list {
     visibility: visible;
     opacity: 1;
-    top: 25px;
+    top: 100%;
 }
 
 .nav-header__nav__ul__li:last-child {
