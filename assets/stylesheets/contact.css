@@ -207,3 +207,7 @@ address {
     padding-top: 15px;
     resize: vertical;
 }
+
+.std-text-input--error {
+    border: 1px solid #ff8282;
+}
