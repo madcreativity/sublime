@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     btnContactSend.addEventListener("click", function() {
         var errorsOccured = false;
 
-        
+
         if(fieldContactFirstName.value === "") {
             errorsOccured = true;
             fieldContactFirstName.classList.add("std-text-input--error");
@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
         if(errorsOccured) {
-            alert("Please fill in all required (*) fields.");
             return;
         }
     });
