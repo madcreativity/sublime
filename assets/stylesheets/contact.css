@@ -108,7 +108,7 @@ address {
     display: flex;
 }
 
-.main__header {
+.main__banner {
     width: 100%;
     height: 232px;
     background-image: url("../img/contact.jpg");
@@ -132,7 +132,7 @@ address {
     margin-bottom: 75px;
 }
 
-.main__header__text-shift {
+.main__banner__text-shift {
     width: 100%;
     max-width: 1170px;
     box-sizing: border-box;
@@ -143,7 +143,7 @@ address {
     height: 100%;
 }
 
-.main__header__path-text {
+.main__banner__path-text {
     margin: 0;
     color: white;
     font-weight: 500;
@@ -203,7 +203,7 @@ address {
 }
 
 /* Modifiers */
-.main__header__path-text--divider {
+.main__banner__path-text--divider {
     text-decoration: none;
     -webkit-transition: color 200ms ease;
     -moz-transition: color 200ms ease;
@@ -212,17 +212,17 @@ address {
     transition: color 200ms ease;
 }
 
-.main__header__path-text--divider:hover {
+.main__banner__path-text--divider:hover {
     color: #E95A5A;
 }
 
-.main__header__path-text--divider::after {
+.main__banner__path-text--divider::after {
     content: "/";
     margin: 0 10px;
     color: white;
 }
 
-.main__header__path-text--current {
+.main__banner__path-text--current {
     color: #E95A5A;
 }
 
