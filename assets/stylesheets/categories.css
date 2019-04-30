@@ -105,7 +105,6 @@ address {
     height: 232px;
     background-image: url("../img/contact.jpg");
     background-position: -200px;
-    margin-bottom: 95px;
 }
 
 .main__banner__text-shift {
@@ -136,6 +135,67 @@ address {
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
+}
+
+.main__content__products {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 46px;
+    width: 1170px;
+    padding-top: 88px;
+    padding-bottom: 100px;
+}
+
+.main__content__products__results {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6c6a74;
+}
+
+.main__content__products__orders {
+    width: 191px;
+    height: 36px;
+    padding: 0 19px 0 26px;
+    box-sizing: border-box;
+    border: solid 2px #ececec;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.main__content__products__orders:hover {
+    cursor: pointer;
+}
+
+.main__content__products__orders__title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6c6a74;
+    margin: 0;
+}
+
+.main__content__products__orders__list {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    right: 0;
+    top: 100%;
+    text-align: right;
+    background-color: white;
+    box-shadow: 0 15px 25px rgba(63, 78, 100, 0.15);
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.main__content__products__orders__chevron::before {
+    font-size: 12px;
+    color: #6c6a74;
 }
 
 /* Modifiers */
