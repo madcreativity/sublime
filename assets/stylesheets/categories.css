@@ -178,7 +178,8 @@ address {
 }
 
 .main__content__products__orders__list {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     list-style: none;
     padding: 0;
@@ -191,11 +192,34 @@ address {
     box-shadow: 0 15px 25px rgba(63, 78, 100, 0.15);
     padding: 0 15px;
     box-sizing: border-box;
+    transform: translateY(10px);
+    transition: opacity 200ms ease, visibility 200ms ease, transform 200ms ease;
 }
 
 .main__content__products__orders__chevron::before {
     font-size: 12px;
     color: #6c6a74;
+}
+
+.main__content__products__orders:hover .main__content__products__orders__list {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(1px);
+}
+
+.main__content__products__orders__list__item {
+    line-height: 36px;
+    border-bottom: solid 1px #dddddd;
+    color: #6c6a74;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    transition: color 150ms ease;
+}
+
+.main__content__products__orders__list__item:hover {
+    color: #AcAaB4;
 }
 
 /* Modifiers */
