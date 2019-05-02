@@ -15,3 +15,52 @@
     opacity: 1;
     top: 100%;
 }
+
+/* Flow button */
+.flow-button {
+    background-color: white;
+    border: 2px solid #1B1B1B;
+    color: #1B1B1B;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 40px;
+    font-size: 14px;
+    margin-top: 13px;
+    overflow: hidden;
+    position: relative;
+    transition: color 200ms ease-in;
+}
+
+.flow-button::after {
+    content: "";
+    background-color: #1B1B1B;
+    width: 150%;
+    height: 100%;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.flow-button:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.flow-button:hover::after {
+    transform: rotate3d(0, 0, 0, 0) translate3d(0, 100%, 0);
+    opacity: 1;
+}
+
+.flow-button--weighted {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.flow-button--constant-one {
+    width: 178px;
+    height: 61px;
+    padding: 0;
+}
