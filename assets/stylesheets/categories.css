@@ -178,22 +178,15 @@ address {
 }
 
 .main__content__products__top-container__orders__list {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
     list-style: none;
     padding: 0;
     margin: 0;
     width: 100%;
-    right: 0;
-    top: 100%;
     text-align: right;
     background-color: white;
     box-shadow: 0 15px 25px rgba(63, 78, 100, 0.15);
     padding: 0 15px;
     box-sizing: border-box;
-    transform: translateY(10px);
-    transition: opacity 200ms ease, visibility 200ms ease, transform 200ms ease;
 }
 
 .main__content__products__top-container__orders__chevron::before {
@@ -201,13 +194,7 @@ address {
     color: #6c6a74;
 }
 
-.main__content__products__top-container__orders:hover .main__content__products__top-container__orders__list {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(1px);
-}
-
-.main__content__products__top-container__orders__list__item {
+.main__content__products__top-container__orders__list__li__item {
     line-height: 36px;
     border-bottom: solid 1px #dddddd;
     color: #6c6a74;
@@ -216,6 +203,11 @@ address {
     font-weight: 400;
     margin: 0;
     transition: color 150ms ease;
+}
+
+
+.main__content__products__top-container__orders__list__li:last-child .main__content__products__top-container__orders__list__li__item {
+    border-bottom: 0;
 }
 
 .main__content__products__top-container__orders__list__item:hover {

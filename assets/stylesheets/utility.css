@@ -1,0 +1,17 @@
+/* Drop list */
+.drop-list {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    list-style: none;
+    margin: 0;
+    transition: top 150ms ease, visibility 150ms ease, opacity 150ms ease;
+}
+
+.drop-list-container:hover .drop-list {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
