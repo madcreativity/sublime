@@ -143,9 +143,10 @@ address {
     justify-content: space-between;
     align-items: center;
     height: 46px;
-    width: 1170px;
     padding-top: 88px;
     padding-bottom: 100px;
+    max-width: 1170px;
+    width: 100%;
 }
 
 .main__content__products__top-container__results {
@@ -210,7 +211,7 @@ address {
     border-bottom: 0;
 }
 
-.main__content__products__top-container__orders__list__item:hover {
+.main__content__products__top-container__orders__list__li__item:hover {
     color: #AcAaB4;
 }
 
