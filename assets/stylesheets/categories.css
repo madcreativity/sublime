@@ -226,6 +226,7 @@ address {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 70px 30px;
+    position: relative;
 }
 
 .main__content__products__bottom-container__product__image {
@@ -252,6 +253,21 @@ address {
     color: #6c6a74;
     line-height: 0.75;
     margin-top: 13px;
+}
+
+.main__content__products__bottom-container__product__extra {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 36px;
+    transform: rotate(90deg);
+    width: 66px;
+    text-align: center;
+    text-decoration: none;
+    transform-origin: top left;
+    left: 54px;
+    top: 0;
 }
 
 /* Modifiers */
@@ -303,34 +319,14 @@ address {
     line-height: 1.2;
 }
 
-.main__content__products__bottom-container__product--extra {
-    position: relative;
-}
-
-.main__content__products__bottom-container__product--extra::before {
-    position: absolute;
-    top: 0;
-    left: 5px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #FFFFFF;
-    line-height: 36px;
-    transform: rotate(90deg) translateX(15px);
-    width: 66px;
-    text-align: center;
-}
-
-.main__content__products__bottom-container__product--new::before {
-    content: "New";
+.main__content__products__bottom-container__product__extra--new {
     background-color: #6c6a74;
 }
 
-.main__content__products__bottom-container__product--sale::before {
-    content: "Sale";
+.main__content__products__bottom-container__product__extra--sale {
     background-color: #e95a5a;
 }
 
-.main__content__products__bottom-container__product--hot::before {
-    content: "Hot";
+.main__content__products__bottom-container__product__extra--hot {
     background-color: #1b1b1b;
 }
