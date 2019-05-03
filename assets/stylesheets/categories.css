@@ -150,6 +150,7 @@ address {
     box-shadow: 0 15px 25px rgba(63, 78, 100, 0.15);
     padding: 0 15px;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 .main__content__products__top-container__orders__chevron::before {
@@ -181,6 +182,10 @@ address {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 70px 30px;
+    position: relative;
+}
+
+.main__content__products__bottom-container__product {
     position: relative;
 }
 
@@ -368,12 +373,24 @@ address {
     background-color: #6c6a74;
 }
 
+.main__content__products__bottom-container__product__extra--new::after {
+    content: "New";
+}
+
 .main__content__products__bottom-container__product__extra--sale {
     background-color: #e95a5a;
 }
 
+.main__content__products__bottom-container__product__extra--sale::after {
+    content: "Sale";
+}
+
 .main__content__products__bottom-container__product__extra--hot {
     background-color: #1b1b1b;
+}
+
+.main__content__products__bottom-container__product__extra--hot::after {
+    content: "Hot";
 }
 
 .main__content__icon-boxes__page-container__page--current {
