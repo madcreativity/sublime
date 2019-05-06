@@ -230,6 +230,10 @@ address {
     top: 0;
 }
 
+.main__content__icon-boxes {
+    margin-top: 75px;
+}
+
 .main__content__icon-boxes__icon-wrapper {
     display: flex;
     margin: 99px 0;
