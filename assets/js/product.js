@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Non-DOM-element variables
     let products = [];
-    let productsSorted = [];
 
     // Add products
     // Row 1
@@ -14,9 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
     products.push(new Product("./assets/img/details_1.jpg", "Smarth Phone", "$735", "hot"));
     products.push(new Product("./assets/img/details_2.jpg", "Smarth Phone", "$151", "hot"));
     products.push(new Product("./assets/img/details_3.jpg", "Smarth Phone", "$641", "sale"));
-
-    
-    productsSorted = products;
     
 
     // Gather elements
@@ -27,8 +23,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Create products method
     function createProducts() {
+        let randomSelections = [];
+        let max = products.length - 1;
+        
         for(let i = 0; i < 4; i++) {
-            let product = productsSorted[i];
+            // Select random elements
+            let random = Math.floor(Math.random() * max);
+            while(randomSelections.indexOf(random) !== -1) {
+                random = Math.floor(Math.random() * max);
+            }
+            randomSelections.push(random);
+
+
+            let product = products[random];
             
             // Create elements
             let productContainer = document.createElement("section");
@@ -76,4 +83,22 @@ document.addEventListener("DOMContentLoaded", function() {
         this.price = price;
         this.clip = clip;
     }
+
+
+
+    // DOM variables
+    let DOMmainImg = document.querySelector(".main__content__focus-product__view__main__img");
+    let DOMproductVariations = document.querySelectorAll(".main__content__focus-product__view__various__img-container");
+
+    // Product variations
+    DOMproductVariations.forEach(element => {
+        element.addEventListener("click", () => {
+            if(!element.classList.contains("main__content__focus-product__view__various__img-container--selected")) {
+                document.querySelector(".main__content__focus-product__view__various__img-container--selected").classList.remove("main__content__focus-product__view__various__img-container--selected");
+                
+                element.classList.add("main__content__focus-product__view__various__img-container--selected");
+                DOMmainImg.src = element.querySelector(".main__content__focus-product__view__various__img-container__img").src;
+            }
+        });
+    });
 });
