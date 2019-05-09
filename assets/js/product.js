@@ -101,4 +101,27 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+
+
+    // Non-DOM variables
+    let productQuantity = 1;
+
+    // DOM variables
+    let DOMaddQuantity = document.querySelector(".quantity-selector__btn-container__button");
+    let DOMremoveQuantity = document.querySelector(".quantity-selector__btn-container__button--lower");
+    let DOMquantityViewer = document.querySelector(".quantity-selector__amount");
+
+    DOMaddQuantity.addEventListener("click", () => {
+        productQuantity++;
+
+        DOMquantityViewer.textContent = productQuantity;
+    });
+
+    DOMremoveQuantity.addEventListener("click", () => {
+        if(productQuantity > 1) {
+            productQuantity--;
+
+            DOMquantityViewer.textContent = productQuantity;
+        }
+    });
 });

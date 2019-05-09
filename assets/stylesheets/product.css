@@ -445,6 +445,10 @@ body {
     outline: none !important;
 }
 
+.quantity-selector__btn-container__button {
+    cursor: pointer;
+}
+
 .quantity-selector__amount {
     color: #1b1b1b;
 }
