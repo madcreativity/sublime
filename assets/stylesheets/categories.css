@@ -302,7 +302,6 @@ address {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     display: block;
-    margin-bottom: 55px;
 }
 
 .main__content__newsletter__inner__newsletter-form {
@@ -322,6 +321,10 @@ address {
     font-weight: 400;
     color: #6c6a74;
     margin: 0;
+}
+
+.newsletter-submit-btn {
+    margin-top: 65px
 }
 
 /* Modifiers */

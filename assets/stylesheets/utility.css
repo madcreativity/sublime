@@ -36,9 +36,10 @@
     width: 150%;
     height: 100%;
     position: absolute;
-    bottom: 100%;
-    right: 0;
-    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+    top: 0;
+    left: 0;
+    transform: rotateZ(-45deg);
+    transform-origin: -25% 100%;
     opacity: 0;
     z-index: 1;
     transition: opacity 200ms ease, transform 200ms ease;
@@ -50,7 +51,7 @@
 }
 
 .flow-button:hover::after {
-    transform: rotate3d(0, 0, 0, 0) translate3d(0, 100%, 0);
+    transform: rotateZ(0);
     opacity: 1;
 }
 
