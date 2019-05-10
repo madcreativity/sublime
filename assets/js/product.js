@@ -88,18 +88,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // DOM variables
     let DOMmainImg = document.querySelector(".main__content__focus-product__view__main__img");
-    let DOMproductVariations = document.querySelectorAll(".main__content__focus-product__view__various__img-container");
+    let DOMproductVariationContainer = document.querySelector(".main__content__focus-product__view__various");
+   
+    DOMproductVariationContainer.addEventListener("click", (e) => {
+        let element = e.target;
 
-    // Product variations
-    DOMproductVariations.forEach(element => {
-        element.addEventListener("click", () => {
-            if(!element.classList.contains("main__content__focus-product__view__various__img-container--selected")) {
-                document.querySelector(".main__content__focus-product__view__various__img-container--selected").classList.remove("main__content__focus-product__view__various__img-container--selected");
-                
-                element.classList.add("main__content__focus-product__view__various__img-container--selected");
-                DOMmainImg.src = element.querySelector(".main__content__focus-product__view__various__img-container__img").src;
-            }
-        });
+        if(element.classList.contains("main__content__focus-product__view__various__img-container") && !element.classList.contains("main__content__focus-product__view__various__img-container--selected")) {
+            document.querySelector(".main__content__focus-product__view__various__img-container--selected").classList.remove("main__content__focus-product__view__various__img-container--selected");
+            
+            element.classList.add("main__content__focus-product__view__various__img-container--selected");
+            DOMmainImg.src = element.querySelector(".main__content__focus-product__view__various__img-container__img").src;
+        }
     });
 
 
